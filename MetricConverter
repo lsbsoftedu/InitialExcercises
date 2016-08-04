@@ -1,0 +1,295 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication14
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var value = double.Parse(Console.ReadLine());
+
+            var input = Console.ReadLine();
+
+            var output = Console.ReadLine();
+//outputMETERS
+            var outputLenght = 0.0;
+
+            if (input == "mm" && output == "m") 
+            {
+                outputLenght = value * 0.001;
+            }
+            else if (input == "cm" && output == "m")
+            {
+                outputLenght = value * 0.01;
+            }
+            else if (input == "mi" && output == "m")
+            {
+                outputLenght = value * 1609.344;
+            }
+            else if (input == "in" && output == "m")
+            {
+                outputLenght = value * 0.0254;
+            }
+            else if (input == "km" && output == "m")
+            {
+                outputLenght = value * 1000;
+            }
+            else if (input == "ft" && output == "m")
+            {
+                outputLenght = value * 0.3048;
+            }
+            else if (input == "yd" && output == "m")
+            {
+                outputLenght = value * 0.9144;
+            }
+            else if (input == "m" && output == "m")
+            {
+                outputLenght = value;
+            }
+
+//outputMM            
+
+            if (input == "cm" && output == "mm")
+            {
+                outputLenght = value * 10;
+            }
+            else if (input == "mi" && output == "mm")
+            {
+                outputLenght = value * 1609344;
+            }
+            else if (input == "in" && output == "mm")
+            {
+                outputLenght = value * 25.4;
+            }
+            else if (input == "km" && output == "mm")
+            {
+                outputLenght = value * 1000000;
+            }
+            else if (input == "ft" && output == "mm")
+            {
+                outputLenght = value * 304.8;
+            }
+            else if (input == "m" && output == "mm" )
+            {
+                outputLenght = value * 1000;
+            }
+            else if (input == "yd" && output == "mm")
+            {
+                outputLenght = value * 914.4;
+            }
+            else if (input == "mm" && output == "mm")
+            {
+                outputLenght = value ;
+            }
+
+//outputKM         
+            if (input == "cm" && output == "km")
+            {
+                outputLenght = value * 0.00001;
+            }
+            else if (input == "mi" && output == "km")
+            {
+                outputLenght = value * 1.609344;
+            }
+            else if (input == "in" && output == "km")
+            {
+                outputLenght = value * 0.0000254;
+            }
+            else if (input == "mm" && output == "km")
+            {
+                outputLenght = value * 0.000001;
+            }
+            else if (input == "ft" && output == "km")
+            {
+                outputLenght = value * 0.0003048;
+            }
+            else if (input == "m" && output == "km")
+            {
+                outputLenght = value * 0.001;
+            }
+            else if (input == "yd" && output == "km")
+            {
+                outputLenght = value * 0.0009144;
+            }
+            else if (input == "km" && output == "km")
+            {
+                outputLenght = value ;
+            }
+//outputCM
+            if (input == "km" && output == "cm")
+            {
+                outputLenght = value * 100000;
+            }
+            else if (input == "mi" && output == "cm")
+            {
+                
+                outputLenght = value * 160934.4;
+            }
+            else if (input == "in" && output == "cm")
+            {
+                outputLenght = value * 2.54;
+            }
+            else if (input == "mm" && output == "cm")
+            {
+                outputLenght = value * 0.1;
+            }
+            else if (input == "ft" && output == "cm")
+            {
+                outputLenght = value * 30.48;
+            }
+            else if (input == "m" && output == "cm")
+            {
+                outputLenght = value * 100;
+            }
+            else if (input == "yd" && output == "cm")
+            {
+                outputLenght = value * 91.44;
+            }
+            else if (input == "cm" && output == "cm")
+            {
+                outputLenght = value ;
+            }
+//outputMI
+            if (input == "km" && output == "mi")
+            {
+                outputLenght = value * 0.621371192;
+            }
+            else if (input == "cm" && output == "mi")
+            {
+                outputLenght = value * 0.000006213711922;
+            }
+            else if (input == "in" && output == "mi")
+            {
+                outputLenght = value * 0.0000157828283;
+            }
+            else if (input == "mm" && output == "mi")
+            {
+                outputLenght = value * 0.000000621371192;
+            }
+            else if (input == "ft" && output == "mi")
+            {
+                outputLenght = value * 0.000189393939;
+            }
+            else if (input == "m" && output == "mi")
+            {
+                outputLenght = value * 0.000621371192;
+            }
+            else if (input == "yd" && output == "mi")
+            {
+                outputLenght = value * 0.000568181818;
+            }
+            else if (input == "mi" && output == "mi")
+            {
+                outputLenght = value ;
+            }
+
+//outputIN
+            if (input == "km" && output == "in")
+            {
+                outputLenght = value * 39370.0787;
+            }
+            else if (input == "cm" && output == "in")
+            {
+                outputLenght = value * 0.393700787;
+            }
+            else if (input == "mi" && output == "in")
+            {
+                outputLenght = value * 63360;
+            }
+            else if (input == "mm" && output == "in")
+            {
+                outputLenght = value * 0.0393700787;
+            }
+            else if (input == "ft" && output == "in")
+            {
+                outputLenght = value * 12;
+            }
+            else if (input == "m" && output == "in")
+            {
+                outputLenght = value * 39.3700787;
+            }
+            else if (input == "yd" && output == "in")
+            {
+                outputLenght = value * 36;
+            }
+            else if (input == "in" && output == "in")
+            {
+                outputLenght = value ;
+            }
+//outputFT
+            if (input == "km" && output == "ft")
+            {
+                outputLenght = value * 3280.8399;
+            }
+            else if (input == "cm" && output == "ft")
+            {
+                outputLenght = value * 0.032808399;
+            }
+            else if (input == "mi" && output == "ft")
+            {
+                outputLenght = value * 5280;
+            }
+            else if (input == "mm" && output == "ft")
+            {
+                outputLenght = value * 0.0032808399;
+            }
+            else if (input == "in" && output == "ft")
+            {
+                outputLenght = value * 0.0833333333;
+            }
+            else if (input == "m" && output == "ft")
+            {
+                outputLenght = value * 3.2808399;
+            }
+            else if (input == "yd" && output == "ft")
+            {
+                outputLenght = value * 3;
+            }
+            else if (input == "ft" && output == "ft")
+            {
+                outputLenght = value ;
+            }
+//outputYD
+            if (input == "km" && output == "yd")
+            {
+                outputLenght = value * 1093.6133;
+            }
+            else if (input == "cm" && output == "yd")
+            {
+                outputLenght = value * 0.010936133;
+            }
+            else if (input == "mi" && output == "yd")
+            {
+                outputLenght = value * 1760;
+            }
+            else if (input == "mm" && output == "yd")
+            {
+                outputLenght = value * 0.0010936133;
+            }
+            else if (input == "in" && output == "yd")
+            {
+                outputLenght = value * 0.0277777778;
+            }
+            else if (input == "m" && output == "yd")
+            {
+                outputLenght = value * 1.0936133;
+            }
+            else if (input == "ft" && output == "yd")
+            {
+                outputLenght = value * 0.333333333;
+            }
+            else if (input == "yd" && output == "yd")
+            {
+                outputLenght = value;
+            }
+
+            Console.WriteLine(outputLenght );
+
+
+        }
+    }
+}
